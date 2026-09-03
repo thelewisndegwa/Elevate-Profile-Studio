@@ -13,7 +13,7 @@ export function FeaturedWork() {
         <SectionHeader
           label="Featured Work"
           title="Professionals who look credible online"
-          description="Real client websites built for advisors, consultants, and industry leaders across Kenya."
+          description="Real client websites built for advisors, consultants, creators, and industry leaders across Kenya."
           className="mb-12"
         />
 

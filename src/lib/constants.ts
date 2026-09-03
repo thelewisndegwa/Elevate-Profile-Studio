@@ -21,6 +21,7 @@ export const industries = [
   "Real Estate",
   "Healthcare",
   "Consulting",
+  "Fashion",
   "Speaking",
 ];
 
@@ -48,6 +49,18 @@ export const projects = [
     gradient: "from-slate-200 via-slate-100 to-blue-50",
     accent: "#4A6FA5",
     tags: ["Multi-service", "Credentials", "Gallery"],
+  },
+  {
+    slug: "tiffany-makena",
+    client: "Tiffany Makena",
+    industry: "Model, Creator & Influencer",
+    affiliation: "USA × Kenya",
+    statement:
+      "Built an editorial portfolio site that positions a model and creator for campaigns, brand partnerships, and collaborations.",
+    url: "https://tiffany-makena-portfolio.vercel.app/",
+    gradient: "from-neutral-300 via-stone-100 to-neutral-50",
+    accent: "#1A1A1A",
+    tags: ["Portfolio", "Gallery", "Brand"],
   },
 ];
 
@@ -133,7 +146,7 @@ export const testimonials = [
 ];
 
 export const metrics = [
-  { value: "2+", label: "Professionals launched" },
+  { value: "3+", label: "Professionals launched" },
   { value: "Kenya", label: "& East Africa" },
   { value: "100%", label: "Mobile-first delivery" },
 ];
