@@ -62,6 +62,18 @@ export const projects = [
     accent: "#1A1A1A",
     tags: ["Portfolio", "Gallery", "Brand"],
   },
+  {
+    slug: "paul-warui",
+    client: "Paul Kariuki Warui, RN",
+    industry: "Registered Nurse",
+    affiliation: "HealthFirst Nursing Services",
+    statement:
+      "Crafted a credentials-led nursing portfolio that presents two decades of Australian and Kenyan clinical experience with clarity and trust.",
+    url: "https://www.healthfirstnursingservices.com.au/",
+    gradient: "from-teal-100 via-sky-50 to-slate-50",
+    accent: "#0D7377",
+    tags: ["Portfolio", "Credentials", "Healthcare"],
+  },
 ];
 
 export const services = [
@@ -146,7 +158,7 @@ export const testimonials = [
 ];
 
 export const metrics = [
-  { value: "3+", label: "Professionals launched" },
+  { value: "4+", label: "Professionals launched" },
   { value: "Kenya", label: "& East Africa" },
   { value: "100%", label: "Mobile-first delivery" },
 ];
