@@ -36,4 +36,11 @@ export const projects = [
     affiliation: "HealthFirst Nursing Services",
     url: "https://www.healthfirstnursingservices.com.au/",
   },
+  {
+    slug: "cb-cakes-events",
+    client: "CB Cakes & Events",
+    industry: "Event Organising & Cakes",
+    affiliation: "Mombasa, Kenya",
+    url: "https://cb-cakes-events.vercel.app/",
+  },
 ];
