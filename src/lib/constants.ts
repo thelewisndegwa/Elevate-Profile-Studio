@@ -1,6 +1,7 @@
 export const siteConfig = {
   name: "Elevate Profile Studio",
-  tagline: "Portfolio websites for professionals.",
+  taglineLead: "Portfolio websites",
+  taglineEmphasis: "for professionals.",
   location: "Nairobi, Kenya",
   whatsapp: "+1 (608) 608-1288",
   consultationUrl:

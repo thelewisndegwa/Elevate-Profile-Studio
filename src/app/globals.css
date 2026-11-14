@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-bg: #f7f5f2;
-  --color-bg-elevated: #ffffff;
-  --color-text: #1a1a1a;
-  --color-text-muted: #6b6560;
-  --color-border: rgba(26, 26, 26, 0.08);
-  --color-accent: #1a1a1a;
-  --color-warm: #ebe6df;
+  --color-bg: #f3efe6;
+  --color-surface: #faf7f1;
+  --color-muted: #6b5148;
+  --color-line: #e4d5cb;
+  --color-clay: #9a3f1e;
+  --color-clay-deep: #7c2e12;
+  --color-clay-soft: #f3e2d4;
   --font-sans: var(--font-inter), system-ui, sans-serif;
   --font-display: var(--font-instrument), Georgia, serif;
 }
@@ -22,12 +22,27 @@ html {
 
 body {
   background-color: var(--color-bg);
-  color: var(--color-text);
+  background-image:
+    radial-gradient(ellipse 70% 45% at 100% -8%, rgb(154 63 30 / 0.12), transparent 55%),
+    radial-gradient(ellipse 50% 40% at -8% 12%, rgb(154 63 30 / 0.06), transparent 50%);
+  color: var(--color-clay);
   font-family: var(--font-sans), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background-color: rgba(26, 26, 26, 0.12);
+  background-color: #e8cbb8;
+  color: #7c2e12;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-clay);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
