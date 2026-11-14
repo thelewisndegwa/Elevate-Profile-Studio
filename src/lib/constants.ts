@@ -3,7 +3,6 @@ export const siteConfig = {
   taglineLead: "Portfolio websites",
   taglineEmphasis: "for professionals.",
   location: "Nairobi, Kenya",
-  whatsapp: "+1 (608) 608-1288",
   consultationUrl:
     "https://wa.me/16086081288?text=Hi%2C%20I%27d%20like%20to%20book%20a%20consultation",
 };

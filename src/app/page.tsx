@@ -38,7 +38,7 @@ export default function Home() {
       <header className="sticky top-0 z-30 border-b border-line bg-bg">
         <div className="mx-auto flex h-16 max-w-5xl items-center justify-between gap-4 px-5 sm:px-8">
           <a href="#top" className="flex min-w-0 items-center gap-2.5">
-            <span className="grid size-8 shrink-0 place-items-center rounded-lg bg-forest font-display text-base text-bg">
+            <span className="grid size-8 shrink-0 place-items-center rounded-lg bg-ink font-display text-base text-bg">
               E
             </span>
             <span className="truncate text-sm font-medium tracking-tight">
@@ -49,7 +49,7 @@ export default function Home() {
           <nav className="flex items-center gap-5 sm:gap-6">
             <a
               href="#work"
-              className="text-sm text-muted transition-colors hover:text-forest"
+              className="text-sm text-muted transition-colors hover:text-ink"
             >
               Work
             </a>
@@ -57,7 +57,7 @@ export default function Home() {
               href={siteConfig.consultationUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-10 items-center rounded-full bg-forest px-4 text-sm font-medium text-bg transition-colors hover:bg-clay"
+              className="inline-flex h-10 items-center rounded-full bg-ink px-4 text-sm font-medium text-bg transition-colors hover:bg-gold hover:text-ink"
             >
               <span className="sm:hidden">Book</span>
               <span className="hidden sm:inline">Book a call</span>
@@ -69,13 +69,13 @@ export default function Home() {
 
       <main id="main">
         <section id="top" className="mx-auto max-w-5xl px-5 pb-4 pt-14 sm:px-8 sm:pt-20">
-          <p className="flex items-center gap-3 text-sm font-medium text-clay">
-            <span className="h-px w-8 bg-clay" aria-hidden="true" />
+          <p className="flex items-center gap-3 text-sm font-medium text-gold-deep">
+            <span className="h-px w-8 bg-gold" aria-hidden="true" />
             Personal branding studio · {siteConfig.location}
           </p>
-          <h1 className="mt-6 max-w-3xl font-display text-[2.7rem] leading-[1.02] tracking-[-0.03em] text-balance text-forest sm:text-6xl lg:text-7xl">
+          <h1 className="mt-6 max-w-3xl font-display text-[2.7rem] leading-[1.02] tracking-[-0.03em] text-balance text-ink sm:text-6xl lg:text-7xl">
             {siteConfig.taglineLead}{" "}
-            <span className="italic text-clay">{siteConfig.taglineEmphasis}</span>
+            <span className="italic text-gold-deep">{siteConfig.taglineEmphasis}</span>
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-pretty text-muted sm:text-lg">
             We design portfolio websites and digital profiles for advisors,
@@ -97,7 +97,7 @@ export default function Home() {
               href={siteConfig.consultationUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex h-12 items-center justify-center gap-2 rounded-full bg-forest px-6 text-sm font-medium text-bg transition-colors hover:bg-clay"
+              className="group inline-flex h-12 items-center justify-center gap-2 rounded-full bg-ink px-6 text-sm font-medium text-bg transition-colors hover:bg-gold hover:text-ink"
             >
               Book a consultation
               <ArrowIcon />
@@ -105,7 +105,7 @@ export default function Home() {
             </a>
             <a
               href="#work"
-              className="inline-flex h-12 items-center justify-center px-2 text-sm font-medium text-forest underline decoration-line underline-offset-4 transition-colors hover:text-clay hover:decoration-clay"
+              className="inline-flex h-12 items-center justify-center px-2 text-sm font-medium text-ink underline decoration-line underline-offset-4 transition-colors hover:text-gold-deep hover:decoration-gold"
             >
               See selected work
             </a>
@@ -138,11 +138,11 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="group grid grid-cols-[2.25rem_1fr_auto] items-start gap-x-3 py-6 transition-colors sm:grid-cols-[3.5rem_1fr_auto] sm:items-center sm:gap-x-6 sm:py-7"
                 >
-                  <span className="pt-1 font-display text-lg tabular-nums text-clay sm:pt-0">
+                  <span className="pt-1 font-display text-lg tabular-nums text-gold-deep sm:pt-0">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <span className="min-w-0">
-                    <span className="block font-display text-2xl leading-tight tracking-tight transition-colors group-hover:text-clay sm:text-[1.75rem]">
+                    <span className="block font-display text-2xl leading-tight tracking-tight transition-colors group-hover:text-gold-deep sm:text-[1.75rem]">
                       {project.client}
                     </span>
                     <span className="mt-1.5 block text-sm leading-relaxed text-muted">
@@ -153,7 +153,7 @@ export default function Home() {
                       {project.affiliation}
                     </span>
                   </span>
-                  <span className="inline-flex items-center gap-1 pt-1.5 text-sm font-medium text-muted transition-colors group-hover:text-clay sm:pt-0">
+                  <span className="inline-flex items-center gap-1 pt-1.5 text-sm font-medium text-muted transition-colors group-hover:text-gold-deep sm:pt-0">
                     Visit
                     <ArrowIcon />
                     <span className="sr-only">
@@ -165,40 +165,6 @@ export default function Home() {
               </li>
             ))}
           </ul>
-        </section>
-
-        <section
-          id="contact"
-          className="mx-auto mt-16 max-w-5xl scroll-mt-24 px-5 sm:mt-24 sm:px-8"
-        >
-          <div className="rounded-3xl bg-forest px-6 py-10 text-bg sm:px-10 sm:py-14">
-            <p className="text-sm font-medium text-clay-soft">WhatsApp</p>
-            <h2 className="mt-3 max-w-lg font-display text-4xl leading-[1.08] tracking-tight text-balance sm:text-5xl">
-              Tell us about the profile you want.
-            </h2>
-            <p className="mt-4 max-w-md text-base leading-relaxed text-pretty text-bg/75">
-              Send a note with what you do and the kind of site you have in
-              mind. We reply on WhatsApp.
-            </p>
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-              <a
-                href={siteConfig.consultationUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex h-12 items-center justify-center gap-2 rounded-full bg-bg px-6 text-sm font-medium text-forest transition-colors hover:bg-clay-soft"
-              >
-                Book a consultation
-                <ArrowIcon />
-                <span className="sr-only"> (opens in a new tab)</span>
-              </a>
-              <a
-                href="tel:+16086081288"
-                className="text-sm text-bg/80 underline decoration-bg/30 underline-offset-4 transition-colors hover:text-bg"
-              >
-                {siteConfig.whatsapp}
-              </a>
-            </div>
-          </div>
         </section>
       </main>
 
