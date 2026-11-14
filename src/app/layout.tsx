@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { Inter, Instrument_Serif } from "next/font/google";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import "./globals.css";
 
 const inter = Inter({
@@ -18,22 +16,9 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Elevate Profile Studio | Premium Digital Identity for Professionals",
+  title: "Elevate Profile Studio",
   description:
-    "Portfolio websites, executive profiles, and digital business cards for lawyers, consultants, founders, and executives across Kenya and Africa.",
-  keywords: [
-    "portfolio website Kenya",
-    "executive personal brand",
-    "professional website design",
-    "digital business card",
-    "financial advisor website",
-  ],
-  openGraph: {
-    title: "Elevate Profile Studio",
-    description:
-      "Premium digital identity for modern professionals across Africa.",
-    type: "website",
-  },
+    "Portfolio websites and digital profiles for professionals in Kenya.",
 };
 
 export default function RootLayout({
@@ -43,11 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${instrumentSerif.variable}`}>
-      <body className="antialiased">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-      </body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }
