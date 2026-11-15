@@ -130,14 +130,9 @@ export default function Home() {
             </p>
           </div>
           <ul className="mt-6 border-t border-line">
-            {projects.map((project, index) => (
-              <li key={project.slug} className="border-b border-line">
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group grid grid-cols-[2.25rem_1fr_auto] items-start gap-x-3 py-6 transition-colors sm:grid-cols-[3.5rem_1fr_auto] sm:items-center sm:gap-x-6 sm:py-7"
-                >
+            {projects.map((project, index) => {
+              const content = (
+                <>
                   <span className="pt-1 font-display text-lg tabular-nums text-gold-deep sm:pt-0">
                     {String(index + 1).padStart(2, "0")}
                   </span>
@@ -153,17 +148,42 @@ export default function Home() {
                       {project.affiliation}
                     </span>
                   </span>
-                  <span className="inline-flex items-center gap-1 pt-1.5 text-sm font-medium text-muted transition-colors group-hover:text-gold-deep sm:pt-0">
-                    Visit
-                    <ArrowIcon />
-                    <span className="sr-only">
-                      {" "}
-                      {project.client}&apos;s site (opens in a new tab)
+                  {project.url ? (
+                    <span className="inline-flex items-center gap-1 pt-1.5 text-sm font-medium text-muted transition-colors group-hover:text-gold-deep sm:pt-0">
+                      Visit
+                      <ArrowIcon />
+                      <span className="sr-only">
+                        {" "}
+                        {project.client}&apos;s site (opens in a new tab)
+                      </span>
                     </span>
-                  </span>
-                </a>
-              </li>
-            ))}
+                  ) : (
+                    <span className="pt-1.5 text-sm text-muted sm:pt-0">
+                      Coming soon
+                    </span>
+                  )}
+                </>
+              );
+
+              return (
+                <li key={project.slug} className="border-b border-line">
+                  {project.url ? (
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group grid grid-cols-[2.25rem_1fr_auto] items-start gap-x-3 py-6 transition-colors sm:grid-cols-[3.5rem_1fr_auto] sm:items-center sm:gap-x-6 sm:py-7"
+                    >
+                      {content}
+                    </a>
+                  ) : (
+                    <div className="grid grid-cols-[2.25rem_1fr_auto] items-start gap-x-3 py-6 sm:grid-cols-[3.5rem_1fr_auto] sm:items-center sm:gap-x-6 sm:py-7">
+                      {content}
+                    </div>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </section>
       </main>

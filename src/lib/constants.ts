@@ -41,13 +41,13 @@ export const projects = [
     client: "CB Cakes & Events",
     industry: "Event Organising & Cakes",
     affiliation: "Mombasa, Kenya",
-    url: "https://cb-cakes-events.vercel.app/",
+    url: null,
   },
   {
     slug: "scene-de-la-fusion",
     client: "Scène de la Fusion",
     industry: "Bespoke Events & Marketing",
     affiliation: "Kenya",
-    url: "https://scene-de-la-fusioon.vercel.app/",
+    url: null,
   },
 ];
