@@ -157,11 +157,7 @@ export default function Home() {
                         {project.client}&apos;s site (opens in a new tab)
                       </span>
                     </span>
-                  ) : (
-                    <span className="pt-1.5 text-sm text-muted sm:pt-0">
-                      Coming soon
-                    </span>
-                  )}
+                  ) : null}
                 </>
               );
 
