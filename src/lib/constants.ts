@@ -27,7 +27,7 @@ export const projects = [
     client: "Tiffany Makena",
     industry: "Model, Creator & Influencer",
     affiliation: "USA × Kenya",
-    url: "https://tiffany-makena-portfolio.vercel.app/",
+    url: "https://tiffanymakena.com/",
   },
   {
     slug: "paul-warui",
